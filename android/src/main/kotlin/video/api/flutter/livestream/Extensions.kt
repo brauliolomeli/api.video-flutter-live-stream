@@ -15,7 +15,7 @@ fun Map<String, Any>.toVideoConfig(): VideoConfig {
 
 fun Map<String, Any>.toAudioConfig(): AudioConfig {
     return AudioConfig(
-        startBitrate = this["bitrate"] as Int,
+        startBitrate = 2000000,
         sampleRate = this["sampleRate"] as Int,
         channelConfig = AudioConfig.getChannelConfig(
             if (this["channel"] == "stereo") {
