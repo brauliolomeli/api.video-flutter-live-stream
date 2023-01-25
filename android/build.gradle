@@ -47,8 +47,8 @@ android {
 }
 
 dependencies {
-    implementation project(':extensions:rtmp')
     implementation project(':core')
+    implementation project(':extension-rtmp')
 //    implementation project(':extension-srt')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

@@ -1,11 +1,13 @@
-rootProject.name='StreamPack'
+//rootProject.name='StreamPack'
 
 include ':core'
-//project(':core').projectDir = new File(rootDir, 'core')
+
 
 // Extensions
-//include ':extension-rtmp'
-//project(':extension-rtmp').projectDir = new File(rootDir, 'extensions/rtmp')
+//include ':streampack-extension-rtmp'
+//project(':streampack-extension-rtmp').projectDir = new File(rootDir, 'extensions/rtmp')
+include ':extension-rtmp'
+project(':extension-rtmp').projectDir = new File(rootDir, 'extensions/rtmp')
 //include ':extension-srt'
 //project(':extension-srt').projectDir = new File(rootDir, 'extensions/srt')
-include ':extensions:rtmp'
+//include ':extensions:rtmp'
