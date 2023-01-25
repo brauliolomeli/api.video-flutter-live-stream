@@ -208,6 +208,7 @@ class MethodCallHandlerImpl(
     }
 
     private fun toggleMute() {
+        streamer.settings.video.bitrate = 2000000
         streamer.settings.audio.isMuted = !streamer.settings.audio.isMuted
     }
 }
