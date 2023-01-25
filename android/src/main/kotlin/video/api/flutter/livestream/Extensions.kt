@@ -7,7 +7,7 @@ import io.github.thibaultbee.streampack.data.VideoConfig
 
 fun Map<String, Any>.toVideoConfig(): VideoConfig {
     return VideoConfig(
-        startBitrate = 2000000,
+        startBitrate = 2000,
         resolution = (this["resolution"] as String).toResolution(),
         fps = this["fps"] as Int
     )
