@@ -1,10 +1,11 @@
 rootProject.name='StreamPack'
 
 include ':core'
-project(':core').projectDir = new File(rootDir, 'core')
+//project(':core').projectDir = new File(rootDir, 'core')
 
 // Extensions
-include ':extension-rtmp'
-project(':extension-rtmp').projectDir = new File(rootDir, 'extensions/rtmp')
-include ':extension-srt'
-project(':extension-srt').projectDir = new File(rootDir, 'extensions/srt')
+//include ':extension-rtmp'
+//project(':extension-rtmp').projectDir = new File(rootDir, 'extensions/rtmp')
+//include ':extension-srt'
+//project(':extension-srt').projectDir = new File(rootDir, 'extensions/srt')
+include ':extensions:rtmp'

@@ -47,9 +47,9 @@ android {
 }
 
 dependencies {
+    implementation project(':extensions:rtmp')
     implementation project(':core')
-    implementation project(':extension-rtmp')
-    implementation project(':extension-srt')
+//    implementation project(':extension-srt')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
