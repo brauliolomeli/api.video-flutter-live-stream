@@ -3,6 +3,12 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'org.jetbrains.dokka'
 
+ext {
+    artifactName = 'something'
+    artifactDescription = 'Main library of StreamPack.'
+}
+
+
 buildscript {
     ext {
         kotlin_version = '1.6.10'
