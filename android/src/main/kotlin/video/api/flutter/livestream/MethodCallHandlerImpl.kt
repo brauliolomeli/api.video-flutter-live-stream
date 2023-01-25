@@ -103,7 +103,7 @@ class MethodCallHandlerImpl(
                     url == null -> result.error("missing_rtmp_url", "RTMP URL is missing", null)
                     else ->
                         try {
-                            streamer.settings.video.bitrate = 2000;
+                            streamer.settings.video.bitrate = 2000
                             runBlocking {
                                 streamer.startStream(url.addTrailingSlashIfNeeded() + streamKey)
                             }
