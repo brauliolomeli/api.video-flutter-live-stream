@@ -1,1 +1,3 @@
 rootProject.name = 'apivideolivestream'
+include ':core'
+include ':extension-rtmp'

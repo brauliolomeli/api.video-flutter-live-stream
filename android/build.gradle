@@ -43,7 +43,9 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
-    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    api project(':core')
+    api project(':extension-rtmp')
+//    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
 //    implementation files('libs/streampack.jar')
 //     implementation "io.github.thibaultbee:streampack:$streamPackVersion"
 //     implementation "io.github.thibaultbee:streampack-extension-rtmp:$streamPackVersion"
